@@ -1,0 +1,15 @@
+.HomeContainer {
+  padding: 1em;
+}
+.UserInfo {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 50em;
+  width: 100%;
+  margin-bottom: 1em;
+}
+.UserInfo > .Entry {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,12 @@
+.ConfirmationCode {
+  margin-top: 15px;
+  width: 25em;
+  display: flex;
+}
+.ConfirmationCode > input {
+  margin-right: 5px;
+  flex: 1;
+}
+.SendButton {
+  margin-right: 5px;
+}
