@@ -23,8 +23,8 @@ Amplify.configure({
       "aws.cognito.signin.user.admin",
       "profile",
     ],
-    redirectSignIn: "https://courageous-blancmange-10101f.netlify.app/home",
-    redirectSignOut: "https://courageous-blancmange-10101f.netlify.app/login",
+    redirectSignIn: "https://courageous-blancmange-10101f.netlify.app",
+    redirectSignOut: "https://courageous-blancmange-10101f.netlify.app",
     responseType: "code", // or 'token', note that REFRESH token will only be generated when the responseType is code
   },
 });
