@@ -49,7 +49,7 @@ export function ForgotPassword() {
       {!!successMessage && <div className="Success">{successMessage}</div>}
 
       {!!navigationType && <Navigate to={navigationType} replace={true} />}
-      <form className="FormContainer">
+      <form className="FormContainer" onSubmit={(e) => e.preventDefault()}>
         <div className="group">
           <label className="label">New Password: </label>
           <input

@@ -75,7 +75,7 @@ export function Password() {
       {navigation && (
         <Navigate to={navigation} replace={true} state={{ resetPassword }} />
       )}
-      <form className="FormContainer">
+      <form className="FormContainer" onSubmit={(e) => e.preventDefault()}>
         <button type="button" className="Back" onClick={goBack}>
           Back
         </button>
@@ -99,7 +99,7 @@ export function Password() {
         </a>
         <br></br>
         {loading ? (
-          <label style={{ marginTop: "12px" }}>Loading...</label>
+          <div style={{ marginTop: "12px" }}>Loading...</div>
         ) : (
           <button
             type="button"

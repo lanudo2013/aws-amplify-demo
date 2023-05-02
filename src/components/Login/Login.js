@@ -48,7 +48,7 @@ export function Login() {
       {!!error && <div className="Error">{error}</div>}
 
       {!!navigationType && <Navigate to={navigationType} replace={true} />}
-      <form className="FormContainer">
+      <form className="FormContainer" onSubmit={(e) => e.preventDefault()}>
         <div className="group">
           <label className="label">Identify Provider:</label>
           <select name="provider" onInput={changeType}>

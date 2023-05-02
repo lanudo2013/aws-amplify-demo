@@ -65,7 +65,7 @@ export function SignUp() {
         <div style={{ color: "red", marginBottom: "12px" }}>{error}</div>
       )}
       {!!navigationType && <Navigate to={navigationType} replace={true} />}
-      <form className="FormContainer">
+      <form className="FormContainer" onSubmit={(e) => e.preventDefault()}>
         <div className="group">
           <label className="label">Email :</label>
           <input
