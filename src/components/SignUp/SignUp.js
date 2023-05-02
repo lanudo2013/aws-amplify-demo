@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./SignUp.css";
-import { Navigate, redirect } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { Auth } from "aws-amplify";
 import "./SignUp.css";
 import { ConfirmationCode } from "../ConfirmationCode/ConfirmationCode";
@@ -37,7 +37,7 @@ export function SignUp() {
 
   const submit = async () => {
     try {
-      const { user, userConfirmed } = await Auth.signUp({
+      const { userConfirmed } = await Auth.signUp({
         username,
         password,
         attributes: {

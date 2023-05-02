@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./Password.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { selectUsername } from "../../state/store";
 import { Auth } from "aws-amplify";
 import { Navigate } from "react-router-dom";
